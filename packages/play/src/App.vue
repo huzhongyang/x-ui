@@ -3,5 +3,5 @@ import XButton from '@x-ui/components/Button/Button.vue'
 </script>
 
 <template>
-  <x-button />
+  <XButton />
 </template>

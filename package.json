@@ -2,35 +2,49 @@
   "name": "x-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev:play": "pnpm --filter @x-ui/play dev"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev:play": "pnpm --filter @x-ui/play dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@x-ui/hooks": "workspace:*",
+    "@x-ui/theme": "workspace:*",
+    "@x-ui/utils": "workspace:*",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.4.29",
+    "x-ui": "workspace:*"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.22.2",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.14.8",
+    "@unocss/eslint-plugin": "^0.61.3",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "@vue/tsconfig": "^0.5.1",
+    "eslint": "^9.7.0",
+    "eslint-plugin-format": "^0.1.2",
+    "lint-staged": "^15.2.7",
     "postcss-color-mix": "^1.1.0",
     "postcss-each": "^1.1.0",
     "postcss-each-variables": "^0.3.0",
     "postcss-for": "^2.1.1",
     "postcss-nested": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.2.2",
     "vite": "^5.3.1",
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.21"
   },
-  "dependencies": {
-    "lodash-es": "^4.17.21",
-    "vue": "^3.4.29",
-    "x-ui": "workspace:*",
-    "@x-ui/hooks": "workspace:*",
-    "@x-ui/utils": "workspace:*",
-    "@x-ui/theme": "workspace:*"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

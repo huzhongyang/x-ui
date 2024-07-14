@@ -1,10 +1,10 @@
 import type { App, Plugin } from 'vue'
 
-type SFCWithInstall<T>  = T & Plugin
+type SFCWithInstall<T> = T & Plugin
 
-export  function makeInstaller(components: Plugin[]) {
+export function makeInstaller(components: Plugin[]) {
   return (app: App) => {
-    components.forEach(component => {
+    components.forEach((component) => {
       app.use(component)
     })
   }
