@@ -3,5 +3,7 @@ import XButton from '@x-ui/components/Button/Button.vue'
 </script>
 
 <template>
-  <XButton />
+  <XButton type="danger" size="large">
+    test
+  </XButton>
 </template>

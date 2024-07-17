@@ -11,7 +11,7 @@ describe('button.vue', () => {
       const wrapper = mount(Button, {
         props: { type: type as any },
       })
-      expect(wrapper.classes()).toContain(`er-button--${type}`)
+      expect(wrapper.classes()).toContain(`x-button--${type}`)
     })
   })
 
@@ -22,7 +22,7 @@ describe('button.vue', () => {
       const wrapper = mount(Button, {
         props: { size: size as any },
       })
-      expect(wrapper.classes()).toContain(`er-button--${size}`)
+      expect(wrapper.classes()).toContain(`x-button--${size}`)
     })
   })
 
@@ -39,7 +39,7 @@ describe('button.vue', () => {
       const wrapper = mount(Button, {
         props: { [prop]: true },
         global: {
-          stubs: ['ErIcon'],
+          stubs: ['XIcon'],
         },
       })
       expect(wrapper.classes()).toContain(className)
