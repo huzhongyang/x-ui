@@ -34,3 +34,7 @@ const _ref = ref<HTMLButtonElement>()
     <slot />
   </component>
 </template>
+
+<style scoped>
+@import './style.scss';
+</style>

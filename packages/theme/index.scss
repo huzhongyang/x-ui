@@ -1,0 +1,94 @@
+@import './reset.css';
+
+:root {
+  /* colors */
+  --x-color-white: #ffffff;
+  --x-color-black: #000000;
+  --x-bg-color: #ffffff;
+  --x-bg-color-page: #f2f3f5;
+  --x-bg-color-overlay: #ffffff;
+  --x-text-color-primary: #303133;
+  --x-text-color-regular: #606266;
+  --x-text-color-secondary: #909399;
+  --x-text-color-placeholder: #a8abb2;
+  --x-text-color-disabled: #c0c4cc;
+  --x-border-color: #dcdfe6;
+  --x-border-color-light: #e4e7ed;
+  --x-border-color-lighter: #ebeef5;
+  --x-border-color-extra-light: #f2f6fc;
+  --x-border-color-dark: #d4d7de;
+  --x-border-color-darker: #cdd0d6;
+  --x-fill-color: #f0f2f5;
+  --x-fill-color-light: #f5f7fa;
+  --x-fill-color-lighter: #fafafa;
+  --x-fill-color-extra-light: #fafcff;
+  --x-fill-color-dark: #ebedf0;
+  --x-fill-color-darker: #e6e8eb;
+  --x-fill-color-blank: #ffffff;
+  --x-color-primary: #409eff;
+  --x-color-primary-light-3: mix(#ffffff, #409eff, 30%);
+  --x-color-primary-light-4: mix(#ffffff, #409eff, 40%);
+  --x-color-primary-light-5: mix(#ffffff, #409eff, 50%);
+  --x-color-primary-light-6: mix(#ffffff, #409eff, 60%);
+  --x-color-primary-light-7: mix(#ffffff, #409eff, 70%);
+  --x-color-primary-light-8: mix(#ffffff, #409eff, 80%);
+  --x-color-primary-dark-2: mix(#000000, #409eff, 0.2);
+  --x-color-success: #67c23a;
+  --x-color-success-light-3: mix(#ffffff, #67c23a, 30%);
+  --x-color-success-light-4: mix(#ffffff, #67c23a, 40%);
+  --x-color-success-light-5: mix(#ffffff, #67c23a, 50%);
+  --x-color-success-light-6: mix(#ffffff, #67c23a, 60%);
+  --x-color-success-light-7: mix(#ffffff, #67c23a, 70%);
+  --x-color-success-light-8: mix(#ffffff, #67c23a, 80%);
+  --x-color-success-dark-2: mix(#000000, #67c23a, 0.2);
+  --x-color-warning: #e6a23c;
+  --x-color-warning-light-3: mix(#ffffff, #e6a23c, 30%);
+  --x-color-warning-light-4: mix(#ffffff, #e6a23c, 40%);
+  --x-color-warning-light-5: mix(#ffffff, #e6a23c, 50%);
+  --x-color-warning-light-6: mix(#ffffff, #e6a23c, 60%);
+  --x-color-warning-light-7: mix(#ffffff, #e6a23c, 70%);
+  --x-color-warning-light-8: mix(#ffffff, #e6a23c, 80%);
+  --x-color-warning-dark-2: mix(#000000, #e6a23c, 0.2);
+  --x-color-danger: #f56c6c;
+  --x-color-danger-light-3: mix(#ffffff, #f56c6c, 30%);
+  --x-color-danger-light-4: mix(#ffffff, #f56c6c, 40%);
+  --x-color-danger-light-5: mix(#ffffff, #f56c6c, 50%);
+  --x-color-danger-light-6: mix(#ffffff, #f56c6c, 60%);
+  --x-color-danger-light-7: mix(#ffffff, #f56c6c, 70%);
+  --x-color-danger-light-8: mix(#ffffff, #f56c6c, 80%);
+  --x-color-danger-dark-2: mix(#000000, #f56c6c, 0.2);
+  --x-color-info: #909399;
+  --x-color-info-light-3: mix(#ffffff, #909399, 30%);
+  --x-color-info-light-4: mix(#ffffff, #909399, 40%);
+  --x-color-info-light-5: mix(#ffffff, #909399, 50%);
+  --x-color-info-light-6: mix(#ffffff, #909399, 60%);
+  --x-color-info-light-7: mix(#ffffff, #909399, 70%);
+  --x-color-info-light-8: mix(#ffffff, #909399, 80%);
+  --x-color-info-dark-2: mix(#000000, #909399, 0.2);
+  /* border */
+  --x-border-width: 1px;
+  --x-border-style: solid;
+  --x-border-color-hover: var(--x-text-color-disabled);
+  --x-border: var(--x-border-width) var(--x-border-style) var(--x-border-color);
+  --x-border-radius-base: 4px;
+  --x-border-radius-small: 2px;
+  --x-border-radius-round: 20px;
+  --x-border-radius-circle: 100%;
+  /* font */
+  --x-font-size-extra-large: 20px;
+  --x-font-size-large: 18px;
+  --x-font-size-medium: 16px;
+  --x-font-size-base: 14px;
+  --x-font-size-small: 13px;
+  --x-font-size-extra-small: 12px;
+  --x-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  --x-font-weight-primary: 500;
+  /* disabled */
+  --x-disabled-bg-color: var(--x-fill-color-light);
+  --x-disabled-text-color: var(--x-text-color-placeholder);
+  --x-disabled-border-color: var(--x-border-color-light);
+  /* animation */
+  --x-transition-duration: 0.4s;
+  --x-transition-duration-fast: 0.2s;
+}
