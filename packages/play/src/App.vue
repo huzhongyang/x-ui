@@ -30,42 +30,54 @@ import XButton from '@x-ui/components/Button/Button.vue'
     按钮
   </XButton>
   <br>
-  <XButton type="primary" round>
+  <XButton type="danger" round>
     按钮
   </XButton>
-  <XButton type="primary" round size="small">
+  <XButton type="danger" round size="small">
     按钮
   </XButton>
-  <XButton type="primary" round size="default">
+  <XButton type="danger" round size="default">
     按钮
   </XButton>
-  <XButton type="primary" round size="large">
+  <XButton type="danger" round size="large">
     按钮
   </XButton>
   <br>
-  <XButton type="primary" circle>
+  <XButton type="info" circle>
     按钮
   </XButton>
-  <XButton type="primary" circle size="small">
+  <XButton type="info" circle size="small">
     按钮
   </XButton>
-  <XButton type="primary" circle size="default">
+  <XButton type="info" circle size="default">
     x
   </XButton>
-  <XButton type="primary" circle size="large">
+  <XButton type="info" circle size="large">
     x
   </XButton>
   <br>
-  <XButton type="primary" disabled>
+  <XButton type="success" disabled>
     按钮
   </XButton>
-  <XButton type="primary" disabled size="small">
+  <XButton type="success" disabled size="small">
     按钮
   </XButton>
-  <XButton type="primary" disabled size="default">
+  <XButton type="success" disabled size="default">
     按钮
   </XButton>
-  <XButton type="primary" disabled size="large">
+  <XButton type="success" disabled size="large">
     按钮
   </XButton>
+  <br>
+  <XButton
+    type="warning"
+    tag="a"
+    href="https://github.com/element-plus/element-plus"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    a
+  </XButton>
+  <br>
+  <input autofocus>
 </template>

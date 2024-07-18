@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { ButtonProps } from './types.ts'
+import type { ButtonInstance, ButtonProps } from './types.ts'
 
 defineOptions({
   name: 'XButton',
@@ -12,6 +12,10 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 })
 
 const _ref = ref<HTMLButtonElement>()
+
+defineExpose<ButtonInstance>({
+  ref: _ref,
+})
 </script>
 
 <template>
